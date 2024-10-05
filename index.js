@@ -28,12 +28,12 @@ export default (address) => {
     }
 
     send (buf) {
-      this._wire.extended('ut_message', buf)
+      this._wire.extended('ut_msg', buf)
     }
   }
 
   // Name of the bittorrent-protocol extension
-  Message.prototype.name = 'ut_message'
+  Message.prototype.name = 'ut_msg'
 
   return Message
 }
