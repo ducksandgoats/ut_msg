@@ -9,7 +9,7 @@ export default (address) => {
 
       this._wire = wire
       this.address = address
-      this._filter = []
+      // this._filter = []
     }
 
     onHandshake (infoHash, peerId, extensions) {
