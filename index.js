@@ -24,7 +24,7 @@ export default (address) => {
     }
 
     onMessage (buf) {
-      this.emit('msg', buf)
+      this.emit('msg', this.address, buf)
     }
 
     send (buf) {
