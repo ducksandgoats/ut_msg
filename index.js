@@ -18,8 +18,8 @@ export default (address) => {
     }
 
     onExtendedHandshake (handshake) {
-      if (!handshake.m || !handshake.m.ut_message) {
-        return this.emit('warning', new Error('Peer does not support ut_message'))
+      if (!handshake.m || !handshake.m.ut_msg) {
+        return this.emit('warning', new Error('Peer does not support ut_msg'))
       }
     }
 
