@@ -19,7 +19,10 @@ export default (address) => {
 
     onExtendedHandshake (handshake) {
       if (!handshake.m || !handshake.m.ut_msg) {
+        this.support = false
         return this.emit('warning', new Error('Peer does not support ut_msg'))
+      } else {
+        this.support = true
       }
     }
 
